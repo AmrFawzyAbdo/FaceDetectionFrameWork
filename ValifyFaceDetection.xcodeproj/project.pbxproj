@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		A53D34132B5EAF3B004AB384 /* ValifyFaceDetection.docc in Sources */ = {isa = PBXBuildFile; fileRef = A53D34122B5EAF3B004AB384 /* ValifyFaceDetection.docc */; };
 		A53D34142B5EAF3B004AB384 /* ValifyFaceDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = A53D34112B5EAF3B004AB384 /* ValifyFaceDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A53D341B2B5EAF5D004AB384 /* SelfieCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53D341A2B5EAF5D004AB384 /* SelfieCameraViewController.swift */; };
+		A53D341D2B5EAF9C004AB384 /* ApprovalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53D341C2B5EAF9C004AB384 /* ApprovalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A53D340E2B5EAF3B004AB384 /* ValifyFaceDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValifyFaceDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53D34112B5EAF3B004AB384 /* ValifyFaceDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValifyFaceDetection.h; sourceTree = "<group>"; };
 		A53D34122B5EAF3B004AB384 /* ValifyFaceDetection.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ValifyFaceDetection.docc; sourceTree = "<group>"; };
+		A53D341A2B5EAF5D004AB384 /* SelfieCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCameraViewController.swift; sourceTree = "<group>"; };
+		A53D341C2B5EAF9C004AB384 /* ApprovalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,8 @@
 			children = (
 				A53D34112B5EAF3B004AB384 /* ValifyFaceDetection.h */,
 				A53D34122B5EAF3B004AB384 /* ValifyFaceDetection.docc */,
+				A53D341A2B5EAF5D004AB384 /* SelfieCameraViewController.swift */,
+				A53D341C2B5EAF9C004AB384 /* ApprovalViewController.swift */,
 			);
 			path = ValifyFaceDetection;
 			sourceTree = "<group>";
@@ -132,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53D341D2B5EAF9C004AB384 /* ApprovalViewController.swift in Sources */,
+				A53D341B2B5EAF5D004AB384 /* SelfieCameraViewController.swift in Sources */,
 				A53D34132B5EAF3B004AB384 /* ValifyFaceDetection.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
