@@ -13,13 +13,13 @@ import UIKit
 public class ApprovalViewController: UIViewController {
     
     // MARK: - Properties
-
+    
     public var capturedImage: UIImage?
     public weak var delegate: SelfieCaptureDelegate?
     private var imageView: UIImageView?
     
     // MARK: - Lifecycle Methods
-
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         // Set up the UI components
@@ -27,7 +27,7 @@ public class ApprovalViewController: UIViewController {
     }
     
     // MARK: - UI Setup
-
+    
     private func setupUI() {
         // UI setup code
         // Style the back button in the navigation bar
@@ -77,7 +77,28 @@ public class ApprovalViewController: UIViewController {
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
+        
+        // Add any additional code specific to iOS versions here using #available checks
+        if #available(iOS 13.0, *) {
+            // Check if running on iOS 13.0 or newer
+            if let label = createLabelForiOS13() {
+                // If available, create and add a label for iOS 13.0 and newer
+                view.addSubview(label)
+            }
+        }
     }
+    
+    // Additional method for iOS 13.0
+    @available(iOS 13.0, *)
+    private func createLabelForiOS13() -> UILabel? {
+        let label = UILabel()
+        label.text = "iOS 13.0 and newer specific label"
+        label.textColor = .black
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }
+    
     
     // MARK: - Button Actions
     
@@ -86,7 +107,7 @@ public class ApprovalViewController: UIViewController {
         // Notify the delegate that the image is approved
         delegate?.didApproveImage(capturedImage)
         capturedImage = nil
-
+        
         if let presentingViewController = presentingViewController {
             presentingViewController.dismiss(animated: true, completion: nil)
         } else {
